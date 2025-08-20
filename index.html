@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Island AI & Molina Healthcare: A Partnership Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .section-title {
+            @apply text-4xl font-bold text-slate-800 text-center mb-4;
+        }
+        .section-subtitle {
+            @apply text-xl text-slate-600 text-center max-w-3xl mx-auto mb-12;
+        }
+        .metric-card {
+            @apply bg-white p-8 rounded-2xl shadow-lg text-center transform transition-transform duration-300 hover:scale-105;
+        }
+        .metric-value {
+            @apply text-6xl font-extrabold text-sky-600 mb-2;
+        }
+        .metric-label {
+            @apply text-lg font-medium text-slate-700;
+        }
+        .gradient-text {
+            @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-teal-500;
+        }
+        .orb-bg {
+            background-image: url('http://googleusercontent.com/file_content/7');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <img class="h-12 w-auto" src="SIAI_Logo_with_name_small.jpg" alt="Sky Island AI Logo">
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#problem" class="text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">The Problem</a>
+                        <a href="#solution" class="text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">The Solution</a>
+                        <a href="#impact" class="text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Impact</a>
+                        <a href="#partnership" class="text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Partnership</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Title -->
+    <header class="bg-slate-50 py-24 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center items-center space-x-8 mb-8">
+                <img class="h-20" src="SIAI_Logo_with_name_small.jpg" alt="Sky Island AI Logo">
+                <span class="text-4xl font-light text-slate-300">+</span>
+                <!-- Placeholder for Molina Logo -->
+                <div class="text-4xl font-bold text-blue-800">Molina Healthcare</div>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900">
+                The <span class="gradient-text">Virtual Case Manager</span>
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-slate-600">
+                Augmenting Capacity and Mitigating Risk in Medicaid Operations
+            </p>
+        </div>
+    </header>
+
+    <!-- Section 2: The Problem -->
+    <section id="problem" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">The Case Management <span class="text-red-500">Capacity Crisis</span></h2>
+            <p class="section-subtitle">The current model is stretched beyond its limits, creating unsustainable workloads, administrative bottlenecks, and significant compliance risks.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Metric 1: Ratio -->
+                <div class="metric-card border-t-4 border-red-500">
+                    <div class="metric-value">1:40</div>
+                    <p class="metric-label">Unsustainable CM to Member Ratio</p>
+                    <p class="mt-4 text-slate-500">Impossible for providing proactive, complex care, especially with new Dual Integration workloads.</p>
+                </div>
+                <!-- Metric 2: HRA Completion -->
+                <div class="metric-card border-t-4 border-amber-500">
+                     <div class="metric-value">&lt;30%</div>
+                    <p class="metric-label">HRA Completion Rate</p>
+                    <p class="mt-4 text-slate-500">Failing assessments directly impact quality scores, risk stratification, and state compliance.</p>
+                </div>
+                <!-- Metric 3: UTC Rate -->
+                <div class="metric-card border-t-4 border-orange-500">
+                    <div class="metric-value">~60%</div>
+                    <p class="metric-label">Unable to Contact (UTC) Rate</p>
+                    <p class="mt-4 text-slate-500">Massive wasted effort and expense in specialized call centers with little to no return.</p>
+                </div>
+            </div>
+
+            <!-- Cost of Status Quo -->
+            <div class="mt-20 bg-slate-800 text-white rounded-2xl p-12 relative overflow-hidden">
+                 <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-700 z-0"></div>
+                 <img src="http://googleusercontent.com/file_content/2" class="absolute inset-0 w-full h-full object-cover opacity-10 z-0" alt="Abstract background">
+                <div class="relative z-10 text-center">
+                    <h3 class="text-3xl font-bold">Scaling Manually is Expensive and Inefficient</h3>
+                    <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">Hiring more staff into the current process increases overhead without guaranteeing better outcomes or contact rates.</p>
+                    <div class="mt-8 bg-white/10 backdrop-blur-sm inline-block p-8 rounded-xl">
+                        <p class="text-2xl text-slate-200">Estimated Annual Cost Avoidance</p>
+                        <p class="text-7xl font-extrabold text-teal-400 mt-2">$5M</p>
+                        <p class="mt-2 text-slate-300">(Due to increased Case Manager efficiency)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: The Solution -->
+    <section id="solution" class="py-20 bg-slate-50 relative overflow-hidden">
+        <div class="orb-bg"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <h2 class="section-title">Introducing the <span class="gradient-text">Virtual Case Manager</span></h2>
+            <p class="section-subtitle">A dedicated, AI-powered assistant for every member, deployed under Molina's brand to provide proactive, personalized, and unlimited support, 24/7.</p>
+            
+            <!-- Core Philosophy -->
+            <div class="mt-16 bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-12">
+                        <h3 class="text-3xl font-bold text-slate-800">Augmentation, Not Replacement</h3>
+                        <p class="mt-4 text-lg text-slate-600">Our core philosophy is to <span class="font-bold text-sky-600">give time back to Case Managers</span>, empowering them to focus on what humans do best: complex care and clinical intervention.</p>
+                        <div class="mt-8 space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-sky-100 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-slate-800">What VCM Automates</h4>
+                                    <p class="mt-1 text-slate-500">Initial HRA outreach, appointment reminders, deadline notifications, and basic, repetitive member questions.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-lg bg-teal-100 flex items-center justify-center">
+                                     <svg class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-slate-800">What Human CMs Focus On</h4>
+                                    <p class="mt-1 text-slate-500">Complex care transitions, crisis intervention, and high-acuity clinical decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-12 flex flex-col justify-center items-center text-center">
+                        <p class="text-2xl font-medium text-slate-300">The 5X Effect</p>
+                        <p class="text-7xl font-extrabold text-white my-2">1:40 <span class="text-4xl mx-2 text-sky-400">&rarr;</span> 1:200</p>
+                        <p class="text-2xl font-medium text-slate-300">Management Ratio to Oversight Ratio</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VCM Experience -->
+            <div class="mt-20">
+                 <h3 class="text-3xl font-bold text-slate-800 text-center mb-10">The VCM Experience: Show, Don't Tell</h3>
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <!-- Member View -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-semibold text-center mb-4">Member View (SMS)</h4>
+                        <div class="bg-slate-200/60 p-6 rounded-2xl max-w-sm mx-auto">
+                            <div class="space-y-4">
+                                <div class="flex items-end">
+                                    <div class="bg-white rounded-xl p-3 shadow-sm" style="border-bottom-left-radius: 0;">
+                                        <p class="text-sm text-slate-800">Hi Maria, this is your Molina Virtual Case Manager. Just a friendly reminder about your appointment with Dr. Smith tomorrow at 10 AM.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-end justify-end">
+                                    <div class="bg-blue-600 text-white rounded-xl p-3 shadow-sm" style="border-bottom-right-radius: 0;">
+                                        <p class="text-sm">Thanks for the reminder!</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-end">
+                                    <div class="bg-white rounded-xl p-3 shadow-sm" style="border-bottom-left-radius: 0;">
+                                        <p class="text-sm text-slate-800">You're welcome! We also need to complete your annual Health Risk Assessment. Is now a good time to start?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <p class="text-center mt-6 text-slate-500">No apps or portals needed. Multilingual support via SMS, email, and natural voice calls.</p>
+                    </div>
+                    <!-- CM Dashboard -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-semibold text-center mb-4">CM Dashboard View</h4>
+                        <div class="bg-slate-50 p-6 rounded-2xl space-y-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500 flex items-center justify-between">
+                                <div>
+                                    <p class="font-semibold text-green-700">Compliant</p>
+                                    <p class="text-sm text-slate-500">HRA Complete, no action needed.</p>
+                                </div>
+                                <div class="text-2xl font-bold text-green-600">312</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-yellow-500 flex items-center justify-between">
+                                <div>
+                                    <p class="font-semibold text-yellow-700">Needs Action</p>
+                                    <p class="text-sm text-slate-500">HRA Incomplete, VCM follow-up scheduled.</p>
+                                </div>
+                                <div class="text-2xl font-bold text-yellow-600">78</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-red-500 flex items-center justify-between">
+                                <div>
+                                    <p class="font-semibold text-red-700">At Risk / Escalated</p>
+                                    <p class="text-sm text-slate-500">Human takeover requested by member.</p>
+                                </div>
+                                <div class="text-2xl font-bold text-red-600">10</div>
+                            </div>
+                        </div>
+                        <p class="text-center mt-6 text-slate-500">Instant prioritization, full audit trails, and seamless human takeover.</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Impact & Strategy -->
+    <section id="impact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Impact and <span class="gradient-text">Strategy</span></h2>
+            <p class="section-subtitle">From solving today's most pressing challenges to future-proofing against tomorrow's regulatory risks, VCM delivers measurable impact.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                <!-- Immediate Impact -->
+                <div class="bg-slate-50 p-8 rounded-2xl border">
+                    <h3 class="text-2xl font-bold text-slate-800">Immediate Impact: Automating HRA Completion</h3>
+                    <p class="mt-3 text-slate-600">VCM conducts the HRA via voice or text, solving the completion challenge within 90 days.</p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex items-center"><span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-3">&check;</span>Drastically cut the 45 minutes CMs spend per HRA.</li>
+                        <li class="flex items-center"><span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-3">&check;</span>Immediate increase in completion rates.</li>
+                        <li class="flex items-center"><span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-3">&check;</span>Significant reduction in UTC rates.</li>
+                    </ul>
+                </div>
+                <!-- Future Proofing -->
+                <div class="bg-slate-50 p-8 rounded-2xl border">
+                    <h3 class="text-2xl font-bold text-slate-800">Future-Proofing: OBBBA Work Requirements</h3>
+                    <p class="mt-3 text-slate-600">VCM is a critical compliance tool to mitigate membership losses from new administrative hurdles.</p>
+                     <ul class="mt-6 space-y-4">
+                        <li class="flex items-center"><span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-3">&check;</span>Proactive deadline reminders and document assistance.</li>
+                        <li class="flex items-center"><span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-3">&check;</span>Explain complex rules in simple, accessible language.</li>
+                        <li class="flex items-center"><span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-3">&check;</span>Reduce avoidable coverage lapses and improve retention.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Population Segmentation -->
+            <div class="mt-20 text-center">
+                 <h3 class="text-3xl font-bold text-slate-800">Strategic Population Segmentation</h3>
+                 <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">VCM uses differentiated, tailored strategies—not a one-size-fits-all approach.</p>
+                 <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h4 class="font-bold text-sky-700 text-lg">Group 1: TANF and CHIP</h4>
+                        <p class="mt-2 text-slate-600">Focus on work requirements, education, and potential transition to the Marketplace.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h4 class="font-bold text-teal-700 text-lg">Group 2: Age Blind Disabled (ABD) & Duals</h4>
+                        <p class="mt-2 text-slate-600">Focus on HRA completion, dual integration, LTSS needs, and transition to Medicare Advantage.</p>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- KPIs -->
+            <div class="mt-20">
+                <h3 class="text-3xl font-bold text-slate-800 text-center mb-10">Projected Impact & KPIs</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse bg-white shadow-lg rounded-2xl overflow-hidden">
+                        <thead>
+                            <tr class="bg-slate-800 text-white">
+                                <th class="p-4 font-semibold text-sm">Metric</th>
+                                <th class="p-4 font-semibold text-sm">Current State (Molina)</th>
+                                <th class="p-4 font-semibold text-sm">Projected State (with VCM)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr>
+                                <td class="p-4 font-medium">CM Effective Capacity</td>
+                                <td class="p-4 text-red-600 font-semibold">1:40</td>
+                                <td class="p-4 text-green-600 font-semibold">1:200</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium">HRA Completion Rate</td>
+                                <td class="p-4 text-red-600 font-semibold">&lt;30%</td>
+                                <td class="p-4 text-green-600 font-semibold">&gt;50%</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium">Unable to Contact (UTC) Rate</td>
+                                <td class="p-4 text-red-600 font-semibold">~60%</td>
+                                <td class="p-4 text-green-600 font-semibold">&lt;40%</td>
+                            </tr>
+                             <tr>
+                                <td class="p-4 font-medium">CM Time on Admin/Outreach</td>
+                                <td class="p-4 text-red-600 font-semibold">~60%</td>
+                                <td class="p-4 text-green-600 font-semibold">&lt;30%</td>
+                            </tr>
+                             <tr>
+                                <td class="p-4 font-medium">Annual Cost Avoidance</td>
+                                <td class="p-4 font-semibold">$0</td>
+                                <td class="p-4 text-green-600 font-semibold">$5M</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Partnership -->
+    <section id="partnership" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">A Partnership for <span class="gradient-text">Innovation</span></h2>
+            <p class="section-subtitle">We are your local partners, combining frontier AI with deep Managed Care operational knowledge to solve your most pressing challenges.</p>
+            
+            <!-- Team -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                <div class="bg-white p-8 rounded-2xl shadow-md text-center">
+                    <h3 class="text-xl font-bold text-slate-800">Ed Hendel</h3>
+                    <p class="text-sky-600 font-semibold">Co-founder</p>
+                    <p class="mt-3 text-slate-600">9 years in healthcare data science, including Banner UHP (AHCCCS), United Healthcare (STARS/CAPS modeling), and Evolent. Deep expertise in MCO operations and AI application.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md text-center">
+                    <h3 class="text-xl font-bold text-slate-800">Jay Fowler</h3>
+                    <p class="text-sky-600 font-semibold">Co-founder</p>
+                    <p class="mt-3 text-slate-600">Finance and economics background with extensive operational expertise. Managed tens of millions of dollars worth of case management grants. Proven track record in building and scaling efficient systems.</p>
+                </div>
+            </div>
+
+            <!-- The Ask -->
+            <div class="mt-20 bg-sky-700 text-white rounded-2xl p-12 text-center">
+                <h3 class="text-4xl font-bold">The Pilot Proposal</h3>
+                <p class="mt-4 text-lg text-sky-200 max-w-2xl mx-auto">A defined, low-risk pilot to validate VCM's impact and provide a proof of concept for Molina's upcoming Arizona Medicaid RFP bid.</p>
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+                    <div class="bg-sky-600 p-4 rounded-lg"><strong>Population:</strong> Molina Arizona (10k lives) or a subset.</div>
+                    <div class="bg-sky-600 p-4 rounded-lg"><strong>Duration:</strong> 90 to 120 Days.</div>
+                    <div class="bg-sky-600 p-4 rounded-lg"><strong>Focus:</strong> Automating HRA completion and Dual Integration outreach.</div>
+                    <div class="bg-sky-600 p-4 rounded-lg"><strong>Next Step:</strong> Finalize pilot scope and success metrics.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+             <img class="h-16 w-auto mx-auto mb-4" src="SIAI_Logo_with_name_small.jpg" alt="Sky Island AI Logo">
+            <h3 class="text-2xl font-bold text-white">Let's Connect</h3>
+            <p class="mt-2 text-slate-300">Contact Ed and Jay to discuss the pilot program.</p>
+            <p class="mt-4 text-slate-400">&copy; 2025 Sky Island AI. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
